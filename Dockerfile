@@ -6,7 +6,7 @@ COPY . .
 
 RUN pip install --upgrade pip
 
-RUN pip install --default-timeout=1000 -r requirements.txt
+RUN pip install --no-cache-dir --default-timeout=1000 -r requirements.txt
 
 EXPOSE 8000
 

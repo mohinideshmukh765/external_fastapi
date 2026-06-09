@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates")
 model = pickle.load(open("diabetes_model.pkl", "rb"))
 
 db = mysql.connector.connect(
-    host= "localhost",  #"host.docker.internal",
+    host= "host.docker.internal",
     user="root",
     password="mohini",
     database="diabetes_db"
