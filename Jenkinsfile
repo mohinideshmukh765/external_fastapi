@@ -27,7 +27,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d -p 8082:8000 --name fastapi-diabetes fastapi-diabetes'
+                bat 'docker run -d -p 8083:8000 --name fastapi-diabetes fastapi-diabetes'
             }
         }
 
